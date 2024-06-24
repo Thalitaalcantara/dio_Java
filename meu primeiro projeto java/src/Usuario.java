@@ -12,11 +12,15 @@ public class Usuario {
     smartTv.diminuirVolume();
     smartTv.diminuirVolume();
     smartTv.aumentarVolume();
+
+    System.out.println("Canal atual : " + smartTv.canal);
+    smartTv.mudarCanal(20);
+    System.out.println("Canal atual : " + smartTv.canal);
     System.out.println("Volume Atual : " +smartTv.volume);
     
 
     System.out.println("Tv ligada? " + smartTv.ligada);
-    System.out.println("Canal atual : " + smartTv.canal);
+    
     System.out.println("Volume atual : " + smartTv.volume);
 
    
@@ -26,8 +30,5 @@ public class Usuario {
   
     smartTv.desligar();
     System.out.println("Novo Status -> Tv Ligada? " + smartTv.ligada);
-  }
-
-  private static void diminuirVolume() {
   }
 }

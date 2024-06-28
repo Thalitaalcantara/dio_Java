@@ -3,8 +3,8 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ExemploWhile {
   
   public static void main(String[] args) {
-    double mesada = 50.0;
-    
+    double mesada = 30.0;
+
         while(mesada>0) {
             Double valorDoce = valorAleatorio();
             if(valorDoce > mesada)
@@ -19,6 +19,6 @@ public class ExemploWhile {
         
    }
    private static double valorAleatorio() {
-	return ThreadLocalRandom.current().nextDouble(2, 8);
+	return ThreadLocalRandom.current().nextDouble(2, 20);
    }
 }
